@@ -32,16 +32,5 @@ pipeline {
             }
         }
     }
-    post {
-        success {
-            emailext to: 'ibtissamrafiki172@gmail.com',
-                subject: 'Build Success',
-                body: 'Le build a été complété avec succès.'
-        }
-        failure {
-            emailext to: 'ibtissamrafiki172@gmail.com',
-                subject: 'Build Failed',
-                body: 'Le build a échoué.'
-        }
-    }
+    
 }
